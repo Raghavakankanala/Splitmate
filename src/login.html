@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splitmate - Login</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="firebase.js" defer></script>
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <h2>Login with Mobile Number</h2>
+    <input type="tel" id="phoneNumber" placeholder="+91 9876543210" />
+    <button onclick="sendOTP()">Send OTP</button>
+    <div id="recaptcha-container"></div>
+    
+    <h2>Enter OTP</h2>
+    <input type="text" id="otpCode" placeholder="Enter OTP" />
+    <button onclick="verifyOTP()">Verify OTP</button>
+
+    <p id="status"></p>
+</body>
+</html>
